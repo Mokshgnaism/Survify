@@ -23,7 +23,8 @@
     "mongoose": "^8.15.0",
     "nodemailer": "^7.0.3",
     "path-to-regexp": "^8.2.0",
-    "render_deploy": "file:.."
+    "render_deploy": "file:..",
+    "cors": "^2.8.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
