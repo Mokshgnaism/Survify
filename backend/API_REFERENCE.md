@@ -4,7 +4,7 @@ Survify is a survey platform backend that includes secure user authentication, e
 
 ---
 
-## 🔧 Features
+##  Features
 
 * JWT-based authentication with cookies
 * Secure password hashing using bcrypt
@@ -15,7 +15,7 @@ Survify is a survey platform backend that includes secure user authentication, e
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 * Node.js
 * Express.js
