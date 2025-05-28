@@ -166,28 +166,24 @@ export async function submitSurveyResult(req, res) {
       return res.status(400).json({ success: false, message: "Invalid answers length" });
     }
 
-    // Create one-hot matrix
     const newMatrix = answers.map((selIdx, q) =>
       survey.options[q].map((_, optIdx) => (optIdx === selIdx ? 1 : 0))
     );
     console.log("New matrix:", newMatrix);
 
-    // Fetch or initialize result doc
     let resultDoc = await SurveyResult.findOne({ surveyId });
 
     if (!resultDoc) {
-      // No existing results, create new
+
       resultDoc = new SurveyResult({ surveyId, results: newMatrix });
       console.log("Creating new SurveyResult");
     } else {
       console.log("Existing results:", resultDoc.results);
-      // Ensure shape matches
+
       if (!Array.isArray(resultDoc.results) || resultDoc.results.length !== newMatrix.length) {
-        // Reset to newMatrix if shape mismatch
         resultDoc.results = newMatrix;
         console.log("Resetting results due to shape mismatch");
       } else {
-        // Sum matrices element-wise
         const summed = resultDoc.results.map((row, rIdx) =>
           row.map((val, cIdx) => val + newMatrix[rIdx][cIdx])
         );
@@ -204,7 +200,7 @@ export async function submitSurveyResult(req, res) {
     return res.status(500).json({ success: false, message: "Server error", error: e.message });
   }
 }
-// import { Survey } from "../models/Survey.js"; // Adjust path if needed
+
 
 export async function deleteSurvey(req, res) {
   try {
