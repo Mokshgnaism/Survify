@@ -26,6 +26,5 @@ export default router;
 
 
 //main admin
-// "name":"loda",
-// "email": "mokshu",
+// "email": "mokshu@1.com",
 // "password":"mokshu"
