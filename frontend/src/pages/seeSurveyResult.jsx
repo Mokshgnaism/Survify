@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react'
-import { useParams } from 'react-router'
+import { useParams } from 'react-router-dom'
 import { useQueryClient } from '@tanstack/react-query';
 import {getSurveyResult} from '../lib/api.js'
 import { axiosInstance } from '../lib/axios';

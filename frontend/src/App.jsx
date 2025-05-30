@@ -18,7 +18,6 @@ import SurveyFill from "./pages/SurveyFill.jsx";
 // import EmailVerificationPage from "./pages/EmailVerificationPage.jsx";
 import AdminPending from "./pages/AdminPending.jsx";
 import AddSurvey from "./pages/addSurvey.jsx";
-import { User } from "lucide-react";
 import SeeSurveyResult from "./pages/seeSurveyResult.jsx";
 import AdminHomePage from "./pages/AdminHomePage.jsx";
 const App = () => {

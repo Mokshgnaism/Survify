@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ShipWheelIcon } from "lucide-react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { BarChart2Icon } from "lucide-react";
 import useSignUp from "../hooks/useSignUp";
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ShipWheelIcon } from "lucide-react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { FormInputIcon } from "lucide-react";
 import { DamIcon } from "lucide-react";
 import { BarChart2Icon } from "lucide-react";
