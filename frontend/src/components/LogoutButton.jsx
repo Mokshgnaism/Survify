@@ -3,7 +3,7 @@ import { axiosInstance } from '../lib/axios'
 import { useMutation } from '@tanstack/react-query'
 import { useQueryClient } from '@tanstack/react-query'
 import axios from 'axios'
-import { useNavigate } from 'react-router'
+import { useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast'
 const LogoutButton = () => {
     const navigate = useNavigate();
